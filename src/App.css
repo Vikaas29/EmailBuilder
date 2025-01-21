@@ -1,0 +1,15 @@
+*{
+    font-family: monospace , Arial, Helvetica, sans-serif;
+    color: white;
+}
+body{
+    background-color: black;
+    background-image: url("/images/bg2.jpg");
+}
+.loading{
+    animation: rotation 2s linear infinite;
+}
+@keyframes rotation {
+    from {rotate: 0deg; }
+    to {rotate: 359deg;}
+}

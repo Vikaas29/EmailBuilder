@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 2</title>
+</head>
+<body 
+style="background-color: black ;
+ color: white;
+  display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 50px;
+   font-family: monospace,Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+
+    <div style="display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 20px;" >
+
+
+    <div style="display: flex; width: 100%;justify-content: start; align-items: center; gap: 10px;">
+        <img style="width: 100px;height: 100px; border-radius: 20px;" src=" <%= data.logo %>" alt="">
+        <h1 style="font-size: xx-large; color: <%= data.title.color %>"> <%= data.title.text ? data.title.text : "Title"  %> </h1>
+    </div>
+    <br>
+    <div style="color: <%= data.opening.color %> ">
+        <%= data.opening.text ? data.opening.text : " Lorem ipsum dolor sit amet consectetur adipisicing elit. Non debitis natus aperiam commodi, officia odit autem deleniti quo! Distinctio, dolore. In ducimus eveniet quo autem voluptas porro? Sit, tempora doloribus.Qui facere, consectetur non sint, deleniti voluptatem dolore, amet eveniet odit dolorum eligendi velit est quod ipsa eum impedit autem quos alias. Blanditiis veniam tempora dolores doloremque laborum rem consectetur.Ut recusandae porro voluptatibus sapiente doloribus, exercitationem quasi soluta itaque nobis repudiandae sint, pariatur veniam architecto ducimus a amet repellendus sunt eius explicabo delectus enim. Esse, eos? Amet, laboriosam commodi." %>
+    </div>
+
+    <br><br>
+
+    <div style="display: flex; gap: 10px;">
+        <img style="width: 50%; border-radius: 20px;" src=" <%= data.midLogo %>" alt="">
+        <div style="width: 50%; color: <%= data.middle.color %> "> <%= data.middle.text ? data.middle.text : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda eaque, pariatur ad itaque, enim repellat quod, tempora laudantium doloribus voluptas omnis nam doloremque saepe magnam reprehenderit quasi similique vitae dolor.Dolores distinctio voluptates nisi veritatis in velit ratione deserunt molestias. Animi omnis, mollitia blanditiis saepe reiciendis nulla atque a modi, sed minima, et iusto harum. Natus facere autem corrupti voluptatem?Illo distinctio sed excepturi. Aliquam ducimus laudantium fuga culpa molestiae? Animi unde, sit esse amet odio eligendi. Praesentium fuga obcaecati suscipit accusantium libero nostrum deleniti. Vel aperiam ipsa assumenda laudantium?" %> </div>
+    </div>
+
+    <br><br>
+
+    <div style="color: <%= data.footer.color %> "> <%= data.footer.text ? data.footer.text : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consectetur necessitatibus explicabo odio provident laboriosam, odit quaerat sint perspiciatis recusandae ratione, deleniti aliquam culpa animi! Excepturi officia ducimus voluptatem distinctio."  %></div>
+</div>    
+</body>
+</html>
